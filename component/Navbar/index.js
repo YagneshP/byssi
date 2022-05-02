@@ -3,6 +3,9 @@ import React from "react";
 const Navbar = () => {
   return (
     <nav className='flex flex-row justify-evenly'>
+      <a>
+        <img className='h-8 w-auto sm:h-10' src='../../assests/byssi.svg' />
+      </a>
       <a href='#' className='font-medium text-orange-500'>
         Home
       </a>
