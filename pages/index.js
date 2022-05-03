@@ -1,7 +1,7 @@
 import React from "react";
 
 const HomePage = () => {
-  return <h1 className='text-3xl font-bold underline'>Hello world!</h1>;
+  return <main className='pt-4 text-3xl font-bold'>Hello world!</main>;
 };
 
 export default HomePage;

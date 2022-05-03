@@ -6,23 +6,26 @@ const Navbar = () => {
   return (
     <nav className='flex flex-row justify-between items-center p-4'>
       <a>
-        <img className='h-8 w-max sm:h-10' src='../../assests/byssi.svg' />
+        <img
+          className='h-8 w-max sm:h-10'
+          src='https://images.squarespace-cdn.com/content/v1/5f3d055105282459b562bb75/ce6170c5-0d72-45f7-9394-850b7e291d0e/byssi-onwhite.png?format=1500w'
+        />
       </a>
       {/* NavLinks shown at sm and bigger */}
       <div className='hidden sm:flex  justify-evenly items-center'>
         <a
           href='#'
-          className='font-medium active:text-orange-500 hover:text-orange-300 pr-6'
+          className='font-medium active:text-orange-500 hover:text-rose-600 pr-6'
         >
           Home
         </a>
-        <a className='font-medium text-black active:text-orange-500 hover:text-orange-300 pr-6'>
+        <a className='font-medium text-black active:text-orange-500 hover:text-rose-600 pr-6'>
           Who We Are
         </a>
-        <a className='font-medium text-black hover:text-orange-300 pr-6'>
+        <a className='font-medium text-black hover:text-rose-600  pr-6'>
           Partners
         </a>
-        <a className='font-medium text-black hover:text-orange-300 pr-6'>
+        <a className='font-medium text-black hover:text-rose-600  pr-6'>
           Applications
         </a>
 
