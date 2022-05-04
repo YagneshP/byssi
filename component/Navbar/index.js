@@ -1,10 +1,11 @@
+import Link from "next/link";
 import React from "react";
 import Button from "../UI/Button";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
-    <nav className='flex flex-row justify-between items-center p-4 bg-white'>
+    <nav className='flex flex-row justify-between items-center p-4 bg-white z-10'>
       <a>
         <img
           className='h-8 w-max sm:h-10'
@@ -13,13 +14,14 @@ const Navbar = () => {
       </a>
       {/* NavLinks shown at sm and bigger */}
       <div className='hidden sm:flex  justify-evenly items-center'>
-        <a
-          href='#'
-          className='font-medium active:text-orange-500 hover:text-rose-600 pr-6'
+        <Link
+          href='/'
+          className='font-medium active:text-orange-500 hover:bg-rose-600 pr-6'
         >
-          Home
-        </a>
-        <a className='font-medium text-black active:text-orange-500 hover:text-rose-600 pr-6'>
+          <a>Home</a>
+        </Link>
+
+        <a href='#' className='font-medium text-black hover:text-rose-600 pr-6'>
           Who We Are
         </a>
         <a className='font-medium text-black hover:text-rose-600  pr-6'>
