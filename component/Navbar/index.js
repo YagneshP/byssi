@@ -19,19 +19,26 @@ const Navbar = () => {
             Home
           </a>
         </Link>
-
-        <a href='#' className='font-medium text-black hover:text-rose-600 pr-6'>
-          Who We Are
-        </a>
-        <a className='font-medium text-black hover:text-rose-600  pr-6'>
-          Partners
-        </a>
-        <a className='font-medium text-black hover:text-rose-600  pr-6'>
-          Applications
-        </a>
-
+        <Link href='/'>
+          <a
+            href='#'
+            className='font-medium text-black hover:text-rose-600 pr-6'
+          >
+            Who We Are
+          </a>
+        </Link>
+        <Link href='/'>
+          <a className='font-medium text-black hover:text-rose-600  pr-6'>
+            Partners
+          </a>
+        </Link>
+        <Link href='/'>
+          <a className='font-medium text-black hover:text-rose-600  pr-6'>
+            Applications
+          </a>
+        </Link>
         <a>
-          <Button>SignIn</Button>
+          <Button>Sign up</Button>
         </a>
       </div>
 
