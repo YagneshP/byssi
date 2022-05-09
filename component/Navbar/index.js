@@ -14,11 +14,10 @@ const Navbar = () => {
       </a>
       {/* NavLinks shown at sm and bigger */}
       <div className='hidden sm:flex  justify-evenly items-center'>
-        <Link
-          href='/'
-          className='font-medium active:text-orange-500 hover:bg-rose-600 pr-6'
-        >
-          <a>Home</a>
+        <Link href='/'>
+          <a className='font-medium text-black hover:text-rose-600 pr-6'>
+            Home
+          </a>
         </Link>
 
         <a href='#' className='font-medium text-black hover:text-rose-600 pr-6'>
