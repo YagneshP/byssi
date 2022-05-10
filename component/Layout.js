@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
           rel='stylesheet'
         />
       </Head>
-      <div className='flex flex-col h-screen'>
+      <div className='flex flex-col'>
         <Navbar />
         {children}
         <Footer />
