@@ -7,8 +7,12 @@ import education from "../public/education.svg";
 const Services = () => {
   return (
     <section className='container mx-auto mb-4'>
-      <div className='flex md:justify-evenly  flex-col md:flex-row mx-4 gap-4 text-white'>
-        <div className='md:w-1/3 h-72 bg-orange-500 flex flex-col justify-center pt-4'>
+      <h2 className='text-2xl font-semibold text-orange-600 relative mb-4'>
+        <span className='block absolute w-12 rounded-md h-1 bg-orange-400 top-4 '></span>
+        <span className='ml-16'>Services</span>
+      </h2>
+      <div className='flex md:justify-evenly flex-col md:flex-row mx-4 gap-4 text-white'>
+        <div className='md:w-1/3 h-72 flex  bg-zinc-800 flex-col justify-center pt-4'>
           <div className='flex justify-evenly items-center relative'>
             <div className='text-white before:h-24 before:w-24 before:bg-gray-50/40 before:rounded-full before:px-1 before:py-4 before:-top-10 before:left-1 block before:absolute'>
               <Image src={teacher} width={80} height={80} />
@@ -39,7 +43,7 @@ const Services = () => {
             Parent Ambassador Program.
           </p>
         </div>
-        <div className='md:w-1/3 h-72 bg-zinc-800 flex flex-col justify-center pt-4'>
+        <div className='md:w-1/3 h-72  bg-orange-500 flex flex-col justify-center pt-4'>
           <div className='flex justify-evenly items-center relative'>
             <div className='text-white before:h-24 before:w-24 before:bg-gray-50/40 before:rounded-full before:px-1 before:py-4 before:-top-10 before:left-1 block before:absolute'>
               <Image src={education} width={80} height={80} />
