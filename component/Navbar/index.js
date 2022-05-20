@@ -5,62 +5,63 @@ import Button from "../UI/Button";
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
-    <nav className='flex flex-row justify-between items-center p-4 z-2 bg-slate-100'>
-      <a>
-        <img
-          className='h-8 w-max sm:h-10'
-          src='https://images.squarespace-cdn.com/content/v1/5f3d055105282459b562bb75/ce6170c5-0d72-45f7-9394-850b7e291d0e/byssi-onwhite.png?format=1500w'
-        />
-      </a>
-      {/* NavLinks shown at sm and bigger */}
-      <div className='hidden sm:flex  justify-evenly items-center'>
-        <Link href='/'>
-          <a className='font-medium text-black hover:text-rose-600 pr-6'>
-            Home
-          </a>
-        </Link>
-        <Link href='/'>
-          <a
-            href='#'
-            className='font-medium text-black hover:text-rose-600 pr-6'
-          >
-            Who We Are
-          </a>
-        </Link>
-        <Link href='/'>
-          <a className='font-medium text-black hover:text-rose-600  pr-6'>
-            Partners
-          </a>
-        </Link>
-        <Link href='/'>
-          <a className='font-medium text-black hover:text-rose-600  pr-6'>
-            Applications
-          </a>
-        </Link>
+    <div className='container mx-auto'>
+      <nav className='flex flex-row justify-between items-center p-4 z-2'>
         <a>
-          <Button>Sign up</Button>
-        </a>
-      </div>
-
-      {/* hamburger icon */}
-      <div className='sm:hidden justify-end'>
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          className='h-6 w-6'
-          fill='none'
-          viewBox='0 0 24 24'
-          stroke='currentColor'
-          strokeWidth={2}
-        >
-          <path
-            strokeLinecap='round'
-            strokeLinejoin='round'
-            d='M4 6h16M4 12h16M4 18h16'
+          <img
+            className='h-8 w-max sm:h-10'
+            src='https://images.squarespace-cdn.com/content/v1/5f3d055105282459b562bb75/ce6170c5-0d72-45f7-9394-850b7e291d0e/byssi-onwhite.png?format=1500w'
           />
-        </svg>
-      </div>
-      {/* Mobile menu */}
-      {/* <div className='absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden'>
+        </a>
+        {/* NavLinks shown at sm and bigger */}
+        <div className='hidden sm:flex  justify-evenly items-center'>
+          <Link href='/'>
+            <a className='font-medium text-black hover:text-rose-600 pr-6'>
+              Home
+            </a>
+          </Link>
+          <Link href='/'>
+            <a
+              href='#'
+              className='font-medium text-black hover:text-rose-600 pr-6'
+            >
+              Who We Are
+            </a>
+          </Link>
+          <Link href='/'>
+            <a className='font-medium text-black hover:text-rose-600  pr-6'>
+              Partners
+            </a>
+          </Link>
+          <Link href='/'>
+            <a className='font-medium text-black hover:text-rose-600  pr-6'>
+              Applications
+            </a>
+          </Link>
+          <a>
+            <Button>Sign up</Button>
+          </a>
+        </div>
+
+        {/* hamburger icon */}
+        <div className='sm:hidden justify-end'>
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            className='h-6 w-6'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke='currentColor'
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap='round'
+              strokeLinejoin='round'
+              d='M4 6h16M4 12h16M4 18h16'
+            />
+          </svg>
+        </div>
+        {/* Mobile menu */}
+        {/* <div className='absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden'>
         <div className='rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden'>
           <div className='px-5 pt-4 flex items-center justify-between'>
             <div>
@@ -132,7 +133,8 @@ const Navbar = () => {
           </a>
         </div>
       </div> */}
-    </nav>
+      </nav>
+    </div>
   );
 };
 
