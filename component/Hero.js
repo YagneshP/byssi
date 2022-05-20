@@ -5,10 +5,10 @@ import Button from "./UI/Button";
 
 const Hero = () => {
   return (
-    <section className='font-bold grow h-screen bg-violet-100/80'>
-      <div className='container mx-auto flex flex-col items-center justify-evenly sm:flex-row'>
-        <div className='order-2 md:order-1 mx-4 flex flex-col justify-evenly md:block'>
-          <h2 className='text-black text-4xl tracking-wide sm:tracking-widest font-serif text-center md:text-left font-bold py-4'>
+    <section className='font-bold grow h-screen bg-gradient-to-r from-purple-300/60 to-violet-100'>
+      <div className='container mx-auto h-screen flex flex-col items-center justify-evenly sm:flex-row'>
+        <div className='order-2 md:order-1 mx-4 flex flex-col justify-evenly md:block md:basis-1/2'>
+          <h2 className='text-black text-4xl tracking-wide sm:tracking-widest font-serif text-center md:text-left font-bold my-2'>
             Black Youth <span className='text-violet-600'>School Success</span>{" "}
             Initiative
           </h2>
@@ -19,7 +19,7 @@ const Hero = () => {
           </p>
           <Button className='my-4'>Enroll student</Button>
         </div>
-        <div className='order-1 md:order-2 mx-4'>
+        <div className='order-1 md:order-2 mx-4 md:basis-1/2'>
           <Image src={new_hero} alt='A kid is writing on paper' />
         </div>
       </div>
