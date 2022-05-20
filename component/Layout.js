@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
           rel='stylesheet'
         />
       </Head>
-      <div className='flex flex-col'>
+      <div className='flex flex-col container mx-auto'>
         <Navbar />
         {children}
         <Footer />
