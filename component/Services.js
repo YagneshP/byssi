@@ -12,8 +12,43 @@ const Services = () => {
           <span className='block absolute w-12 rounded-md h-1 bg-orange-400 top-4 '></span>
           <span className='ml-16'>Services</span>
         </h2>
-        <div className='flex md:justify-evenly flex-col md:flex-row mt-16 gap-4 text-white'>
-          <div className='md:w-1/3 h-72 flex  bg-zinc-800 flex-col justify-center pt-4'>
+        <div className='flex md:justify-evenly flex-col md:flex-row mt-16 gap-4 text-slate-600'>
+          {/* New design for services */}
+          <div className='bg-white p-10 rounded-lg relative'>
+            <div className='bg-indigo-500 h-20 w-20 text-center p-4 rounded-2xl absolute -top-16 left-10'>
+              <Image src={teacher} />
+            </div>
+            <h4 className='font-bold text-2xl'> Online Tutoring</h4>
+            <p className='mt-4 text-lg'>
+              One-to-One Tutoring and Weekly Homework Help as well as Drop-in
+              Sessions with your online tutor.
+            </p>
+          </div>
+
+          <div className='bg-white p-10 rounded-lg relative'>
+            <div className='bg-indigo-500 h-20 w-20 text-center p-4 rounded-2xl absolute -top-16 left-10'>
+              <Image src={mentor} />
+            </div>
+            <h4 className='font-bold text-2xl'> Online Mentoring</h4>
+            <p className='mt-4 text-lg'>
+              Big Brother Big Sisters, Leadership and Career Skills Training,
+              Parent Ambassador Program.
+            </p>
+          </div>
+
+          <div className='bg-white p-10 rounded-lg relative'>
+            <div className='bg-indigo-500 h-20 w-20 text-center p-4 rounded-2xl absolute -top-16 left-10'>
+              <Image src={education} />
+            </div>
+            <h4 className='font-bold text-2xl'> Online Programing</h4>
+            <p className='mt-4 text-lg'>
+              Virtual programing, educational workshops and events helping
+              students to develop academic, professional and practical life
+              skills and knowledge..
+            </p>
+          </div>
+
+          {/* <div className='md:w-1/3 h-72 flex  bg-zinc-800 flex-col justify-center pt-4'>
             <div className='flex justify-evenly items-center relative'>
               <div className='text-white before:h-24 before:w-24 before:bg-gray-50/40 before:rounded-full before:px-1 before:py-4 before:-top-10 before:left-1 block before:absolute'>
                 <Image src={teacher} width={80} height={80} />
@@ -59,7 +94,7 @@ const Services = () => {
               students to develop academic, professional and practical life
               skills and knowledge.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
