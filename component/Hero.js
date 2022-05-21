@@ -12,7 +12,7 @@ const Hero = () => {
             Black Youth <span className='text-violet-600'>School Success</span>{" "}
             Initiative
           </h2>
-          <p className='text-sm sm:text-md font-light pb-4 sm:pt-6 sm:pb-12 lg:text-xl md:leading-normal'>
+          <p className='text-sm sm:text-md font-light pb-6 sm:pt-6 sm:pb-12 lg:text-xl md:leading-normal'>
             Support up to approximately 500 Black children and youth in grades
             6-8 and for all four years of high school over a five-year period to
             achieve graduation rates on par with the regional average.
