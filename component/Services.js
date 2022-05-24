@@ -12,7 +12,7 @@ const Services = () => {
           <span className='block absolute w-12 rounded-md h-1 bg-orange-400 top-4 '></span>
           <span className='ml-16'>Services</span>
         </h2>
-        <div className='flex md:justify-evenly flex-col md:flex-row mt-16 gap-4 text-slate-600'>
+        <div className='flex md:justify-evenly flex-col md:flex-row mt-32 gap-4 text-slate-600'>
           {/* New design for services */}
           <div className='bg-white p-10 rounded-lg relative'>
             <div className='bg-indigo-500 h-20 w-20 text-center p-4 rounded-2xl absolute -top-16 left-10'>
