@@ -37,7 +37,7 @@ const Services = () => {
           </div>
 
           <div className='bg-white p-10 rounded-lg relative'>
-            <div className='bg-indigo-500 h-20 w-20 text-center p-4 rounded-2xl absolute -top-16 left-10'>
+            <div className='bg-indigo-500 shadow-lg shadow-indigo-500/40 h-20 w-20 text-center p-4 rounded-2xl absolute -top-16 left-10'>
               <Image src={education} />
             </div>
             <h4 className='font-bold text-2xl'> Online Programing</h4>
