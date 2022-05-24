@@ -19,8 +19,8 @@ function About() {
           </p>
           <Button>More About Us</Button>
         </div>
-        <div className='basis-3/4'>
-          <Image src={about_us} />
+        <div className='basis-3/4 md:h-96 rounded-xl overflow-hidden relative'>
+          <Image src={about_us} layout='fill' />
         </div>
       </div>
     </section>
