@@ -23,13 +23,13 @@ const Services = () => {
     },
   ];
   return (
-    <section className='bg-slate-100 h-full sm:h-screen'>
+    <section className='bg-slate-100 h-full lg:h-screen'>
       <div className='container mx-auto pt-16 pb-16'>
         <h2 className='text-2xl font-semibold text-orange-600 relative '>
           <span className='block absolute w-12 rounded-md h-1 bg-orange-400 top-4 '></span>
           <span className='ml-16'>Services</span>
         </h2>
-        <div className='flex md:justify-evenly flex-col justify-between md:flex-row sm:mt-24 gap-4 text-slate-600'>
+        <div className='flex lg:justify-evenly flex-col justify-between lg:flex-row sm:mt-12 md:mt-20 gap-4 text-slate-600'>
           {/* New design for services */}
           {services.map((service) => (
             <div
