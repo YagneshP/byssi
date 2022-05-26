@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Goals from "../component/Goals";
+import Teams from "../component/Teams";
 import about_us from "../public/about_us.jpg";
 const About = () => {
   return (
@@ -24,6 +25,7 @@ const About = () => {
           </p>
         </div>
         <Goals />
+        <Teams />
       </section>
     </main>
   );
