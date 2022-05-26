@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import about_us from "../public/about_us.jpg";
 import Button from "./UI/Button";
@@ -17,7 +18,11 @@ function About() {
             for BYSSI students and parents / caregivers to achieve better
             outcomes.
           </p>
-          <Button>More About Us</Button>
+          <Button>
+            <Link href='/about'>
+              <a>More About Us</a>
+            </Link>
+          </Button>
         </div>
         <div className='basis-3/4 md:h-96 rounded-xl overflow-hidden relative'>
           <Image src={about_us} layout='fill' />
