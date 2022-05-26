@@ -3,7 +3,7 @@ import React from "react";
 const Goals = () => {
   return (
     <div className='container mx-auto'>
-      <div className='bg-gray-100 flex flex-col p-10 gap-12 justify-around items-center '>
+      <div className='bg-gray-100 flex flex-col p-10 gap-12 justify-around items-center rounded-xl'>
         <h1 className='text-3xl font-bold '>Our Goals</h1>
         <div className='flex flex-row flex-wrap sm:flex-nowrap  justify-evenly gap-6'>
           <div className='flex flex-col items-center justify-between gap-4'>
