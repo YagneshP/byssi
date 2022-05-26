@@ -18,11 +18,12 @@ function About() {
             for BYSSI students and parents / caregivers to achieve better
             outcomes.
           </p>
-          <Button>
-            <Link href='/about'>
-              <a>More About Us</a>
-            </Link>
-          </Button>
+
+          <Link href='/about'>
+            <a className='bg-green-400 shadow-md shadow-green-400/40 rounded-full py-3 px-9 text-black font-medium hover:text-white'>
+              More About Us
+            </a>
+          </Link>
         </div>
         <div className='basis-3/4 md:h-96 rounded-xl overflow-hidden relative'>
           <Image src={about_us} layout='fill' />
