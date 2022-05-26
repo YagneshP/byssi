@@ -5,9 +5,9 @@ import Button from "../UI/Button";
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
-    <div className='container mx-auto relative'>
+    <div className='container mx-auto relative z-20'>
       <div className='container mx-auto absolute top-0 left-0'>
-        <nav className='flex flex-row justify-between items-center p-4 z-2'>
+        <nav className='flex flex-row justify-between items-center p-4 z-20'>
           <a>
             <img
               className='h-8 w-max sm:h-10'
