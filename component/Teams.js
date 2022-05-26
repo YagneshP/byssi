@@ -43,7 +43,10 @@ const Teams = () => {
       </h2>
       <div className='flex flex-row flex-wrap items-center justify-around mt-8 container mx-auto '>
         {teamMembers.map((member) => (
-          <div className='bg-slate-300 relative drop-shadow-lg text-center w-72 h-52 rounded-2xl flex flex-col justify-center mt-32'>
+          <div
+            key={member.employeeName}
+            className='bg-slate-300 relative drop-shadow-lg text-center w-72 h-52 rounded-2xl flex flex-col justify-center mt-32'
+          >
             <div className='rounded-full border-4 border-white  ring ring-yellow-300 ring-offset-2 absolute -top-20 left-16 h-40  w-40 '>
               <Image
                 src={member.employeeProfilePic}
