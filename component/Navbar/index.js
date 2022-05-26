@@ -21,11 +21,8 @@ const Navbar = () => {
                 Home
               </a>
             </Link>
-            <Link href='/'>
-              <a
-                href='#'
-                className='font-medium text-black hover:text-rose-600 pr-6'
-              >
+            <Link href='/about'>
+              <a className='font-medium text-black hover:text-rose-600 pr-6'>
                 Who We Are
               </a>
             </Link>
