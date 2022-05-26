@@ -8,7 +8,7 @@ const About = () => {
     <main className='grow mt-16 sm:mt-24'>
       <section className='h-full flex flex-col'>
         <div className='h-96 bg-cover bg-center bg-[url("../public/about_us.jpg")]'></div>
-        <div className='h-80'>
+        <div className='h-full container mx-auto'>
           <h2 className=' text-3xl text-center font-extrabold text-slate-600 mt-10 mb-6'>
             {" "}
             Who we are ?
