@@ -41,7 +41,7 @@ const Teams = () => {
       <h2 className='text-4xl text-center font-extrabold mt-16 '>
         Meet our Team
       </h2>
-      <div className='flex flex-row flex-wrap items-center justify-around mt-8 container mx-auto '>
+      <div className='flex flex-row flex-wrap items-center justify-around mt-8 container mx-auto gap-4 '>
         {teamMembers.map((member) => (
           <div
             key={member.employeeName}
