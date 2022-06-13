@@ -9,7 +9,6 @@ const Teams = ({ teamMembers }) => {
 
   return (
     <>
-      {isOpen && <Modal teamMember={teamMembers[selectedMember]} />}
       <section className='conatainer mx-auto h-full mb-10'>
         <h2 className='text-4xl text-center font-extrabold mt-16 '>
           Meet our Team
@@ -31,7 +30,7 @@ const Teams = ({ teamMembers }) => {
                 <h3 className='text-2xl font-medium'>{member.employeeName}</h3>
                 <p className='text-lg'>{member.employeeTitle}</p>
                 <Link
-                  href={`/employee/${member.employeeId}`}
+                  href={`?employeeId=${member.employeeId}`}
                   // className='bg-green-400 text-white p-5'
                 >
                   <a className='bg-green-600 text-white py-2 px-4 mt-4 rounded-md '>
