@@ -2,8 +2,17 @@ import Image from "next/image";
 import React from "react";
 import Goals from "../component/Goals";
 import Teams from "../component/Teams";
-import about_us from "../public/about_us.jpg";
-const About = () => {
+// import about_us from "../public/about_us.jpg";
+import chenai from "../public/chennai.png";
+import emma from "../public/emma.png";
+import crystel from "../public/crystel.png";
+import parker from "../public/parker.png";
+import sheldon from "../public/sheldon.png";
+const About = ({ teamMembers }) => {
+  /**
+   * Using getStaticProps
+   * and getStaticPaths for team members
+   */
   return (
     <main className='grow mt-16 sm:mt-24'>
       <section className='h-full flex flex-col'>
@@ -25,10 +34,54 @@ const About = () => {
           </p>
         </div>
         <Goals />
-        <Teams />
+        <Teams teamMembers={teamMembers} />
       </section>
     </main>
   );
 };
+
+//getStaticProps fn will get the info of team memebers. In future we can set to send request to the cms and get the details.
+
+export async function getStaticProps(context) {
+  const teamMembers = [
+    {
+      employeeId: 1,
+      employeeName: "Chenai Kadungure",
+      employeeTitle: "Senior Manager",
+      employeeProfilePic: chenai,
+      full: true,
+    },
+    {
+      employeeId: 2,
+      employeeName: "Emma Mauze",
+      employeeTitle: "Administrative Coordinator",
+      employeeProfilePic: emma,
+      full: true,
+    },
+    {
+      employeeId: 3,
+      employeeName: "Sheldon Caruna",
+      employeeTitle: "Youth Engagement Coordinator",
+      employeeProfilePic: sheldon,
+    },
+    {
+      employeeId: 4,
+      employeeName: "Crystel Campbell",
+      employeeTitle: "Youth Engagement Coordinator",
+      employeeProfilePic: crystel,
+    },
+    {
+      employeeId: 5,
+      employeeName: "Jeniece Parker",
+      employeeTitle: "Youth Engagement Coordinator",
+      employeeProfilePic: parker,
+    },
+  ];
+  return {
+    props: {
+      teamMembers,
+    },
+  };
+}
 
 export default About;
