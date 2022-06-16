@@ -26,12 +26,12 @@ const Navbar = () => {
                 Who We Are
               </a>
             </Link>
-            <Link href='/'>
+            <Link href='/events'>
               <a className='font-medium text-black hover:text-rose-600  pr-6'>
-                Partners
+                Events
               </a>
             </Link>
-            <Link href='/'>
+            <Link href='/application'>
               <a className='font-medium text-black hover:text-rose-600  pr-6'>
                 Applications
               </a>
