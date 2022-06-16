@@ -13,13 +13,13 @@ const Modal = ({ teamMember, onClose }) => {
         className='fixed inset-0 flex items-center justify-center p-4 bg-black/70'
         aria-hidden='true'
       >
-        <div className='fixed inset-0 flex items-center justify-center p-4'>
-          <div className='min-h-full  flex items-center justify-center  '>
-            <Dialog.Panel className='mx-auto max-w-sm md:max-w-full rounded-xl bg-white px-8 pb-12 pt-8 flex flex-col '>
+        <div className='fixed inset-0 flex  justify-center p-4'>
+          <div className='min-h-fit  flex  justify-center  bg-white rounded-xl overflow-y-scroll lg:overflow-y-auto'>
+            <Dialog.Panel className='mx-auto max-w-sm md:max-w-full px-8 pb-12 pt-8 flex flex-col '>
               <button className='self-end' onClick={onClose}>
                 X
               </button>
-              <div className='flex flex-col lg:flex-row md:gap-12 gap-6 mt-6'>
+              <div className='flex flex-col  md:gap-12 gap-6 mt-6'>
                 {/* Image, Name and Title with social links  Item-1*/}
                 <div className='flex flex-col justify-center items-center gap-4'>
                   {/* Image */}
