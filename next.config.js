@@ -1,11 +1,11 @@
-const STUDIO_REWRITE = {
-  source: "/studio/:path*",
+const ADMIN_REWRITE = {
+  source: "/admin/:path*",
   destination:
     process.env.NODE_ENV === "development"
-      ? "http://localhost:3333/studio/:path*"
-      : "/studio/index.html",
+      ? "http://localhost:3333/admin/:path*"
+      : "/admin/index.html",
 };
 
 module.exports = {
-  rewrites: () => [STUDIO_REWRITE],
+  rewrites: () => [ADMIN_REWRITE],
 };
