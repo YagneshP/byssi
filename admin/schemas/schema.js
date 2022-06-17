@@ -3,8 +3,7 @@ import createSchema from "part:@sanity/base/schema-creator";
 
 // Then import schema types from any plugins that might expose them
 import schemaTypes from "all:part:@sanity/base/schema-type";
-import { string } from "prop-types";
-
+import events from "./events";
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -13,32 +12,6 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     /* Your types here! */
-    {
-      title: "Event",
-      name: "event",
-      type: "document",
-      fields: [
-        {
-          title: "Name",
-          name: "name",
-          type: "string",
-        },
-        {
-          title: "Host",
-          name: "host",
-          type: "string",
-        },
-        {
-          title: "Date",
-          name: "date",
-          type: "date",
-        },
-        {
-          title: "Poster",
-          name: "poster",
-          type: "image",
-        },
-      ],
-    },
+    events,
   ]),
 });
