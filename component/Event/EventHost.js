@@ -1,11 +1,11 @@
 import React from "react";
 
-const EventHost = () => {
+const EventHost = ({ host }) => {
   return (
     <div className='w-full  text-sm  mx-auto mb-2 md:mb-4'>
       <p className='hidden md:line-clamp-1 text-gray6'>
-        <span className='s1uol3r6'>Group name:</span>Claims Insurance Agents
-        Meetup Group • Toronto, ON
+        <span className='s1uol3r6'>Host name:</span>
+        {host}
       </p>
       <p className='hidden md:line-clamp-1 text-viridian '>New Group</p>
       <p className='line-clamp-1 md:hidden'>
