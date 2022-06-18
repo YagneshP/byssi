@@ -5,6 +5,7 @@ import client, {
 } from "../lib/sanity";
 import { useRouter } from "next/router";
 import { eventQuery } from "../lib/queries";
+import Events from "../component/Event/Events";
 
 const events = (props) => {
   const { eventdata, preview } = props;
@@ -15,17 +16,7 @@ const events = (props) => {
     initialData: eventdata,
     enabled: preview || router.query.preview !== undefined,
   });
-  return (
-    <>
-      {events &&
-        events.map((event) => (
-          <article>
-            <h3 className='text-lg'> {event.name} </h3>
-            <p className='mt-3'>{event.host}</p>
-          </article>
-        ))}
-    </>
-  );
+  return <>{events && <Events events={events} />}</>;
 };
 
 export async function getStaticProps({ params, preview = false }) {
