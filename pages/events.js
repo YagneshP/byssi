@@ -1,17 +1,17 @@
 import client, {
   getClient,
   usePreviewSubscription,
-  // PortableText,
+  PortableText,
 } from "../lib/sanity";
 import { useRouter } from "next/router";
-import { groq } from "next-sanity";
+import { eventQuery } from "../lib/queries";
 
 const events = (props) => {
   const { eventdata, preview } = props;
 
   const router = useRouter();
 
-  const { data: events } = usePreviewSubscription(query, {
+  const { data: events } = usePreviewSubscription(eventQuery, {
     initialData: eventdata,
     enabled: preview || router.query.preview !== undefined,
   });
@@ -180,14 +180,8 @@ const events = (props) => {
   // );
 };
 
-const query = groq`
-*[_type == "event"] | order(date desc) {
-  name, host, date
-}
-`;
-
 export async function getStaticProps({ params, preview = false }) {
-  const event = await getClient(preview).fetch(query);
+  const event = await getClient(preview).fetch(eventQuery);
 
   return {
     props: {
