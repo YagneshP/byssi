@@ -1,6 +1,8 @@
 import React from "react";
+import { urlFor } from "../../lib/sanity";
 
-const EventImage = () => {
+const EventImage = ({ image }) => {
+  console.log("image", urlFor(image.image));
   return (
     <div className='relative overflow-hidden bg-transparent w-full h-92'>
       <picture>
@@ -13,7 +15,7 @@ const EventImage = () => {
       type='image/jpeg'
     /> */}
         <img
-          src='https://secure-content.meetupstatic.com/images/classic-events/504673917/222x125.jpg'
+          src={urlFor(image.image).width(200)}
           style={{ width: "200px", height: "150px" }}
           alt='Tips &amp; Hacks on how to Increase Productivity as an Insurance Adjuster or Agent'
           loading='lazy'
