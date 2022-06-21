@@ -3,17 +3,16 @@ import React from "react";
 const EventHost = ({ host }) => {
   return (
     <div className='w-full  text-sm  mx-auto mb-2 md:mb-4'>
-      <p className='hidden md:line-clamp-1 text-gray6'>
-        <span className='s1uol3r6'>Host name:</span>
+      <p className=' md:line-clamp-1 text-gray6 font-bold'>
+        <span className='font-medium text-black pr-2'>Host name:</span>
         {host}
       </p>
       <p className='hidden md:line-clamp-1 text-viridian '>New Group</p>
-      <p className='line-clamp-1 md:hidden'>
-        <span className='s1uol3r6'>Group name:</span>Claims Insurance Agents
-        Meetup Group
+      <p className='line-clamp-1 '>
+        <span className='font-medium text-black pr-2'> Details:</span>Claims
+        Insurance Agents Meetup Group
       </p>
-      <p className='line-clamp-1 md:hidden'>Toronto, ON</p>
-      <p className='line-clamp-1 md:hidden text-viridian '>New Group</p>
+      <p className='line-clamp-1 italic pt-2 text-gray-500'>Toronto, ON</p>
     </div>
   );
 };
