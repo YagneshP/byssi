@@ -1,3 +1,4 @@
+import { urlFor } from "../../lib/sanity";
 import EventHost from "./EventHost";
 import EventImage from "./EventImage";
 import EventTime from "./EventTime";
@@ -10,8 +11,8 @@ const EventItem = ({ event }) => {
       <a className='w-full inline cursor-pointer relative hover:no-underline'>
         <div className='flex w-full flex-col'>
           <div className='flex flex-row-reverse md:flex-row flex-1 overflow-hidden'>
-            <div className='bg-red-100 ml-3 md:mr-3 md:ml-0'>
-              <EventImage image={poster} />
+            <div className=' ml-3 md:mr-3 md:ml-0 w-56'>
+              <EventImage title={name} image={poster} />
             </div>
             <div className='overflow-hidden w-full'>
               <EventTime time={date} />

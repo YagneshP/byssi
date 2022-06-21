@@ -1,28 +1,30 @@
 import React from "react";
 import { urlFor } from "../../lib/sanity";
 
-const EventImage = ({ image }) => {
-  console.log("image", urlFor(image.image));
+const EventImage = ({ title, image }) => {
   return (
-    <div className='relative overflow-hidden bg-transparent w-full h-92'>
+    <div
+      className='relative overflow-hidden bg-transparent'
+      style={{ height: 125 }}
+    >
       <picture>
-        {/* <source
-      srcSet='https://secure-content.meetupstatic.com/images/classic-events/504673917/222x125.webp, https://secure-content.meetupstatic.com/images/classic-events/504673917/333x188.webp 1.5x, https://secure-content.meetupstatic.com/images/classic-events/504673917/444x250.webp 2x'
-      type='image/webp'
-    />
-    <source
-      srcSet='https://secure-content.meetupstatic.com/images/classic-events/504673917/222x125.jpg, https://secure-content.meetupstatic.com/images/classic-events/504673917/333x188.jpg 1.5x, https://secure-content.meetupstatic.com/images/classic-events/504673917/444x250.jpg 2x'
-      type='image/jpeg'
-    /> */}
+        <source
+          srcSet={urlFor(image).width(200).height(300).url()}
+          type='image/webp'
+        />
+        <source
+          srcSet={urlFor(image).width(200).height(300).url()}
+          type='image/jpeg'
+        />
         <img
-          src={urlFor(image.image).width(200)}
+          src={urlFor(image).width(200).height(300).url()}
           style={{ width: "200px", height: "150px" }}
-          alt='Tips &amp; Hacks on how to Increase Productivity as an Insurance Adjuster or Agent'
+          alt={title}
           loading='lazy'
           className='rounded-t-lg rounded-lg w-full absolute top-0 left-0 object-contain object-center'
         />
       </picture>
-      <div
+      {/* <div
         className='absolute top-2 left-2 right-2 hidden md:flex'
         aria-label='Online Event'
         data-testid='online-indicator'
@@ -33,7 +35,7 @@ const EventImage = ({ image }) => {
           </div>
           <span className='text-gray6 truncate'>Online Event</span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
